@@ -72,6 +72,7 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<configuration>
+					<encoding>UTF-8</encoding>
 					<source>${java.version}</source>  <!-- Usando la versión definida en properties -->
 					<target>${java.version}</target>
 					<annotationProcessorPaths>
