@@ -9,6 +9,8 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class DetalleDto {
+    private  Integer id;
+
     private String detalleCompleto;
 
     private String procedencia;

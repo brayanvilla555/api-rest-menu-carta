@@ -15,6 +15,7 @@ public class DetalleMapper {
     }
     public static DetalleDto toDetalleDto(Detalle detalle) {
         return DetalleDto.builder()
+                .id(detalle.getId())
                 .detalleCompleto(detalle.getDetalleCompleto())
                 .descuento(detalle.getDescuento())
                 .procedencia(detalle.getProcedencia())

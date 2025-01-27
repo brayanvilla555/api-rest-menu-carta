@@ -8,6 +8,7 @@ import lombok.*;
 @NoArgsConstructor
 @Builder
 public class FileDto {
+    private Integer id;
     private String nombre;
     private String url;
 }

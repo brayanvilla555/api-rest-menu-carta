@@ -11,8 +11,9 @@ public class FileMapper {
             return null;
         }
 
-        if(file.getNombre() != null && file.getExtencion() != null){
+        if(file.getNombre() != null && file.getExtencion() != null && file.getId() != null){
             return FileDto.builder()
+                    .id(file.getId())
                     .nombre(file.getNombre())
                     .url(ProductoServiceImpl.generarUrlImagen(file.getNombre().concat(".").concat(file.getExtencion())))
                     .build();
